@@ -1,0 +1,13 @@
+FROM node:18-alpine
+
+WORKDIR /multi_langue_app
+
+COPY ./package*.json /multi_langue_app/
+
+RUN npm install
+
+COPY . .
+
+EXPOSE 3000
+
+CMD [ "npm", "start" ]

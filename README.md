@@ -75,8 +75,8 @@ Création de dockerFile pour le projet
 
 ### Builder l'image docker
 
-docker build -f dockerFile -t multi_langue
+#### `docker build -f dockerFile -t multi_langue`
 
 ### Lancer le conteneur
 
-docker run -p 3000:3000 multi_langue
+#### `docker run -p 3000:3000 multi_langue`
